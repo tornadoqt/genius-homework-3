@@ -207,6 +207,8 @@
                       name="user-name"
                       id="user-name"
                       placeholder="Ваше ім'я та прізвище"
+                      pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+                      required
                     />
                   </div>
 
@@ -220,6 +222,8 @@
                       name="user-tel"
                       id="user-tel"
                       placeholder="Ваш номер телефону"
+                      pattern="^\+[0-9]{12}"
+                      required
                     />
                   </div>
 
@@ -233,10 +237,11 @@
                       name="user-email"
                       id="user-tel"
                       placeholder="Ваша електронна пошта"
+                      required
                     />
                   </div>
 
-                  <button class="button modal-button" type="button">Записатись безкоштовно</button>
+                  <button class="button modal-button" type="submit">Записатись безкоштовно</button>
                   <p class="policy">
                     Натискаючи на кнопку я погоджуюсь
                     <a class="policy" href="#">з політикою конфіденційності</a>
@@ -315,7 +320,7 @@
         <h3 class="gift-title">
           Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
         </h3>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
             <input
@@ -324,6 +329,8 @@
               name="user-name"
               id="user-name"
               placeholder="Ваше ім'я та прізвище"
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+              required
             />
           </div>
 
@@ -335,6 +342,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Ваш номер телефону"
+              pattern="^\+[0-9]{12}"
+              required
             />
           </div>
 
@@ -346,10 +355,11 @@
               name="user-email"
               id="user-tel"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
 
-          <button class="button modal-button" type="button">Записатись безкоштовно</button>
+          <button class="button modal-button" type="submit">Записатись безкоштовно</button>
           <p class="policy">
             Натискаючи на кнопку я погоджуюсь
             <a class="policy" href="#">з політикою конфіденційності</a>
